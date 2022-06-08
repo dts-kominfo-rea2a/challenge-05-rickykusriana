@@ -10,7 +10,7 @@ const sorter = (names, fnCallback) => {
   let users = [];
   fnCallback(names);
   for (let i = 0; i < names.length; i++) {
-    users.push(i+'. '+names[i]);
+    users.push((i+1)+'. '+names[i]);
   }
   return users;
 }
